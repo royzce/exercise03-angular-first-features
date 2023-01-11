@@ -1,1 +1,9 @@
-<p>blog-item works!</p>
+<h1>Blog Page</h1>
+
+<ul>
+    <li *ngFor="let item of getListOfBlog()" style="list-style: none">
+        <button >edit</button>
+        <button >delete</button>
+        {{item.title}} {{item.description}} {{item.author}} {{item.comments}}
+    </li>
+</ul>

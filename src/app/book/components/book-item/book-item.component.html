@@ -1,1 +1,9 @@
-<p>book-item works!</p>
+<h1>Book Page</h1>
+
+<ul>
+    <li *ngFor="let item of getListOfBooks()" style="list-style: none">
+        <button >edit</button>
+        <button >delete</button>
+        {{item.name}}, {{item.authors}}, {{item.isbn}}
+    </li>
+</ul>
