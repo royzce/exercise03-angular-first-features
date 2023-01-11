@@ -36,9 +36,7 @@ export class BookService {
   getListOfBooks(){
     return this.arrBooks;
   }
-  deleteElementById(id:number):void {
-    this.arrBooks.splice(id, 1);
-  }
+  
   constructor() { }
 
 }
